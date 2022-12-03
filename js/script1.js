@@ -37,6 +37,7 @@ const highCal = document.querySelector(".high_cal");
 resetButton.addEventListener("click", (event) => {
 	calBlock.style.display = 'none';
 	submitButton.disabled = true;
+	resetButton.disabled = true;
 
 	getChecked(caloriesForm.gender).checked = false
 
