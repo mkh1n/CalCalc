@@ -1,15 +1,10 @@
 
 body{
-	margin: 0;
-	padding: 0;
-	background-image: url('bg.png');
-	height: 100%;
-	background-size:contain;
-	background-repeat: repeat;
   font-family: 'Commissioner', sans-serif;
 }
 main{
   display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -17,7 +12,7 @@ main{
 .main-container{
   display: flex;
   flex-direction: column;
-  border-radius: 5%;
+  border-radius: 2%;
   padding: 30px;
 	margin:30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -141,4 +136,10 @@ button:active:enabled{
 }
 .calBlock ul li span{
 	font-size: 20px;
+}
+.footer a{
+	color:rgb(71, 133, 214)
+}
+.footer a:hover{
+	color:rgb(27, 92, 177)
 }
