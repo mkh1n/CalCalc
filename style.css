@@ -1,0 +1,145 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('bg.jpg');
+	height: 100%;
+	background-size:contain;
+	background-repeat: repeat;
+  font-family: 'Commissioner', sans-serif;
+}
+main{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  padding: 30px;
+	margin:30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width: 50vw;
+	background-color: rgb(255, 255, 255);
+
+}
+.gender-choice{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+	align-self: flex-start;
+	padding-left: 0;
+	width: 100%;
+	margin: 0 0;
+	margin-bottom: 10px;
+}
+.gender-icon{
+  position: relative;
+  top: 25%;
+  width: 40px;
+  height: 40px;
+}
+.stats-holder, .gender-holder{
+  display: flex;
+  flex-direction: column;
+  margin-right: 45%;
+  border: none;
+  width: auto;
+}
+.stat-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stat-header{
+  align-self: flex-start;
+}
+.stat-input{
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+.short{
+  width: 40px;
+  text-align: center;
+}
+.stat-row input{
+  width: 80px;
+  border: solid 1px rgb(211, 211, 211);
+  height: 30px;
+  border-radius: 2px;
+
+}
+.activity-holder{
+  border: none;
+}
+.activity-form{
+	padding: 5px;
+	border-radius: 6px;
+	background-color: #fff;
+	border: solid 1px rgb(211, 211, 211);
+}
+.buttons-holder{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+button{
+	border: none;
+  padding: 10px;
+  border-radius: 10px;
+	width: max-content;
+}
+.submit{
+	margin-bottom: 20px;
+}
+button:disabled{
+  
+  color: rgb(134, 134, 134);
+  background-color: rgb(230, 230, 230);
+  
+}
+button:enabled{
+  color: rgb(0, 0, 0);
+  background-color: rgb(189, 189, 189);
+  transition: 0.3s;
+}
+button:hover:enabled{
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+button:active:enabled{
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(99, 99, 99);
+}
+.calBlock{
+  display: none;
+	flex-direction: column;
+	
+}
+.calBlock ul{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-evenly;
+	padding-left: 0;
+}
+.calBlock ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.calBlock ul li p{
+	margin: 0;
+	font-size: large;
+}
+.calBlock ul li span{
+	font-size: 20px;
+}
+
+

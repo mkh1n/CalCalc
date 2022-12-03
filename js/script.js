@@ -4,7 +4,7 @@ const submitButton = document.querySelector(".submit");
 // получаем в переменную нашу форму и все данные которые в ней есть.
 // подробнее можно посмотреть тут https://learn.javascript.ru/form-elements
 const caloriesForm = document.forms.counter;
-
+console.log(caloriesForm[0])
 // span с калориями
 const normalCal = document.querySelector(".normal_cal");
 
@@ -15,6 +15,16 @@ resetButton.addEventListener("click", (event) => {
     // нужно чтобы страница после нажатия не обновлялась
     event.preventDefault();
 });
+const genderValue = caloriesForm.gender[0].checked.;
+const activityValue = Number(document.querySelector('input[name="activity"]:checked').value);
+
+const old = Number(document.querySelector('#old').);
+const height = Number(document.querySelector('#height').value);
+const weight = Number(document.querySelector('#weight').value);
+const normalCalValue = normalCalValue = ((10 * weight) + (6.25 * height) -
+(5 * old) + genderValue) * activityValue;
+const lowCalValue = normalCalValue + (normalCalValue/100)*15;
+const highCalValue = normalCalValue - (normalCalValue/100)*15;
 
 submitButton.addEventListener("click", (event) => {
     alert("Submit!");
