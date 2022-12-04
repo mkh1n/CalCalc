@@ -10,13 +10,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
 	<title>Счётчик калорий</title>
 </head>
 
 <body>
 	<main class="main">
 		<div class="main-container">
-			<h1 style="margin:0; padding-bottom:10px; border-bottom: 3px solid rgb(226, 226, 226);">
+			<h1 style="margin:0; padding-bottom:10px; border-bottom: 3px solid rgb(248, 128, 59);">
 				Калькулятор потребления калорий
 			</h1>
 			<form name="counter" action="#" method="post">
@@ -26,17 +30,17 @@
 				</h2>
 				<div class="gender-holder">
 					<ul class="gender-choice">
-						<li>
+						<li class='radio-gender'>
 							<input type="radio" name="gender" id='male'value="5">
 							<label for="male">
 								<img class="gender-icon" src="img/male.svg">
 								Мужчина
 							</label>
 						</li>
-						<li>
+						<li class='radio-gender'>
 							<input type="radio" name="gender" id='female'value="-161">
 							<label for='female'>
-								<img class="gender-icon" src="img/female.svg">
+								<img class="gender-icon" src="img/female.svg"'>
 								Женщина
 							</label>
 						</li>
@@ -109,11 +113,11 @@
 					<li>
 						<h3>
 							<p>
-								Поддержание веса
+								Поддержание<br> веса
 							</p>
 						</h3>
 						<span class="normal_cal"></span> ккал
-
+						<img class='circle' src="./img/norm.png">
 					</li>
 					<li>
 						<h3>
@@ -122,6 +126,7 @@
 							</p>
 						</h3>
 						<span class="high_cal"></span> ккал
+						<img class='circle' src="./img/fit.png">
 					</li>
 					<li>
 						<h3>
@@ -130,6 +135,7 @@
 							</p>
 						</h3>
 						<span class="low_cal"></span> ккал
+						<img class='circle'  src="./img/fat.png">
 					</li>
 				</ul>
 			</section>

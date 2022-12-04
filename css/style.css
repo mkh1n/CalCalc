@@ -37,10 +37,43 @@ main{
 	margin: 0 0;
 	margin-bottom: 10px;
 }
-
+.radio-gender input[type=radio] {
+	display: none;
+}
+.radio-gender label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.radio-gender label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	bottom:0.5px;
+	background: url(../img/icon-radio-empty.svg) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.radio-gender input[type=radio]:checked + label:before {
+	background: url(../img/icon-radio-checked.svg) 0 0 no-repeat;
+}
+ 
+.radio-gender label:hover:before {
+	filter: brightness(120%);
+}
+ .form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
 .gender-icon{
   position: relative;
-  top: 25%;
+  top: 12px;
   width: 40px;
   height: 40px;
 }
@@ -74,19 +107,21 @@ label:hover{
 }
 .stat-row input{
   width: 80px;
-  border: solid 1px rgb(211, 211, 211);
+  border: solid 1.6px rgb(189, 189, 189);
   height: 30px;
   border-radius: 2px;
 
 }
 .activity-holder{
   border: none;
+	padding: 0;
+	padding-bottom: 15px;
 }
 .activity-form{
 	padding: 5px;
 	border-radius: 6px;
 	background-color: #fff;
-	border: solid 1px rgb(211, 211, 211);
+  border: solid 1.6px rgb(189, 189, 189);
 }
 .buttons-holder{
   display: flex;
@@ -102,10 +137,11 @@ button{
 }
 .submit, .reset{
 	padding-left: 30px;
-	margin-bottom: 20px;
 	position: relative;
 }
-
+.submit{
+	margin-bottom: 15px;
+}
 button:disabled{
   color: rgb(134, 134, 134);
   background-color: rgb(230, 230, 230);
@@ -166,7 +202,8 @@ button:active:enabled{
 .calBlock{
   display: none;
 	flex-direction: column;
-	
+	align-items: center;
+	justify-content:center;
 }
 .calBlock ul{
 	display: flex;
@@ -183,9 +220,20 @@ button:active:enabled{
 .calBlock ul li p{
 	margin: 0;
 	font-size: large;
+	text-align: center;
+}
+.calBlock ul li h3{
+	height: -webkit-fill-available;
+	margin-bottom: 5px;
 }
 .calBlock ul li span{
 	font-size: 20px;
+}
+.circle{
+	opacity: none;
+	margin-top: 15px;
+	width: 100px;
+	height: 100px;
 }
 .footer a{
 	color:rgb(71, 133, 214)
