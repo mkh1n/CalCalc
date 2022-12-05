@@ -241,3 +241,36 @@ button:active:enabled{
 .footer a:hover{
 	color:rgb(27, 92, 177)
 }
+@media only screen and (max-width: 840px) {
+	.main{
+		width: 100vw;
+		font-size: 14px;
+	}
+	.main-container{
+		width: 90%;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+	}
+	.main-container h1{
+		font-size: 23px;
+	}
+	.main-container h2{
+		font-size: 18px;
+	}
+	.activity-holder{
+		border: none;
+		padding: 0;
+		padding-bottom: 15px;
+	}
+	.activity-form{
+		font-size: 13px;
+		padding: 5px;
+		border-radius: 6px;
+		background-color: #fff;
+		border: solid 1.6px rgb(189, 189, 189);
+	}
+	.gender-choice{
+		width: 90vw;
+	}
+}
